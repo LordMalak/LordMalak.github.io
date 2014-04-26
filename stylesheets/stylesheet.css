@@ -23,6 +23,28 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+.menu {
+	position: fixed;
+	top: 10em;
+	right: 12%;
+	background: #222;
+	border: 5px solid #444;
+	width: 10%;
+	color: #ffffff;
+}
+
+.menu ul li ul {
+	display:none;
+}
+.menu ul li:hover ul {
+	visibility:visible;
+}
+
+.decale {
+	padding: 10% 5% 10% 5%;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -67,7 +89,9 @@ a:hover {
   color: #90D355;
 }
 
-h1.title {
+h1.title
+h3.title
+h2.title {
   margin: 30px 20px 10px;
   font-size: 60px;
   font-weight: bold;
@@ -79,18 +103,18 @@ h1.title {
 
 
 .wrapper {
-  width: 675px;
+  width: 50%;
   margin: 0 auto;
 }
 
 #container {
   border: 1px solid #2a2a2a;
-  background: #ddd url(../images/pattern.png);
+  background: #ddd url(../images/code-space.jpg);
   box-shadow: 0 0 5px #b1b1b1;
 }
 
 p.tagline {
-  padding: 20px 20px 0;
+  padding: 80px 25px 0;
   color: #fff;
   font-size: 17px;
 }
@@ -305,6 +329,7 @@ a.download-button span {
 	background-color: #000000;
 	margin: 10px 0 0 10px;
 	padding: 10px 0 0 10px;
+	color: #ffffff;
 }
 
 footer {
